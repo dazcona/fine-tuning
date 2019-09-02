@@ -41,6 +41,62 @@ $ make run
 $ make dev
 ```
 
+4. Show NN architecture (indexes and layers): 
+```
+$ python src/inspect_model.py
+[INFO] showing layers...
+[INFO] 0	InputLayer
+[INFO] 1	Conv2D
+[INFO] 2	Conv2D
+[INFO] 3	MaxPooling2D
+[INFO] 4	Conv2D
+[INFO] 5	Conv2D
+[INFO] 6	MaxPooling2D
+[INFO] 7	Conv2D
+[INFO] 8	Conv2D
+[INFO] 9	Conv2D
+[INFO] 10	MaxPooling2D
+[INFO] 11	Conv2D
+[INFO] 12	Conv2D
+[INFO] 13	Conv2D
+[INFO] 14	MaxPooling2D
+[INFO] 15	Conv2D
+[INFO] 16	Conv2D
+[INFO] 17	Conv2D
+[INFO] 18	MaxPooling2D
+[INFO] 19	Flatten
+[INFO] 20	Dense
+[INFO] 21	Dense
+[INFO] 22	Dense
+
+$ python src/inspect_model.py --include-top 0
+[INFO] showing layers...
+[INFO] 0	InputLayer
+[INFO] 1	Conv2D
+[INFO] 2	Conv2D
+[INFO] 3	MaxPooling2D
+[INFO] 4	Conv2D
+[INFO] 5	Conv2D
+[INFO] 6	MaxPooling2D
+[INFO] 7	Conv2D
+[INFO] 8	Conv2D
+[INFO] 9	Conv2D
+[INFO] 10	MaxPooling2D
+[INFO] 11	Conv2D
+[INFO] 12	Conv2D
+[INFO] 13	Conv2D
+[INFO] 14	MaxPooling2D
+[INFO] 15	Conv2D
+[INFO] 16	Conv2D
+[INFO] 17	Conv2D
+[INFO] 18	MaxPooling2D
+```
+
+5. Fine-tuning:
+```
+
+```
+
 ...
 
 ## Resources
